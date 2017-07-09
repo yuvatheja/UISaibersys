@@ -16,4 +16,4 @@ pageControllers.controller('LoginController', ['$scope', '$http', '$location', f
         }
     };
     
-}]);
+}]); 

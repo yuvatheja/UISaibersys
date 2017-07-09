@@ -3,11 +3,10 @@ var myApp = angular.module('myApp', [
     'pageControllers'
 ]);
 
-myApp.value('ticket', false);
 
 myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$routeProvider.
-        when('home', {
+        when('/home', {
             templateUrl: 'views/home.html',
             controller: 'LoginController'
         }).
@@ -20,5 +19,5 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
         otherwise({
             redirectTo: '/home'
         });
-    $locationProvider.html5Mode(false);
+    
 }]);

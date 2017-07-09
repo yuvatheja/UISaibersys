@@ -1,7 +1,17 @@
 <section>
-
-
-<h1>homepage</h1>
-
-
+    <center><form>
+        <label id="errmsg">{{errmessage}}</label><br>
+        <div id="username" >
+            <span>UserName:</span>
+            <input type="text" ng-model="name"/>
+        </div>
+        <div id="password" >   
+            <span>Password:</span>
+            <input type="password" ng-model="password"/>
+        </div>
+        
+        <input type="button" Value="SignIn" ng-click="login()"/>
+    
+    </form> </center>
+    
 </section>
