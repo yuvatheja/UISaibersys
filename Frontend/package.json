@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.5",
-    "angular-route": "^1.6.5"
+    "angular-route": "^1.6.5",
+    "bootstrap": "^3.3.7"
   },
   "devDependencies": {
     "browser-sync": "^2.18.12",
