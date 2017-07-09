@@ -16,3 +16,6 @@ src/js
 
 frontend/scripts.json
 frontend/styles.json
+
+
+use "gulp start" to run
