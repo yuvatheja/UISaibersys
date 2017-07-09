@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/yuvatheja/UISaibersys/issues"
   },
-  "homepage": "https://github.com/yuvatheja/UISaibersys#readme"
+  "homepage": "https://github.com/yuvatheja/UISaibersys#readme",
+  "devDependencies": {
+    "gulp-file-tree": "^0.4.1"
+  },
+  "dependencies": {}
 }
