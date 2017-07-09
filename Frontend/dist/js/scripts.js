@@ -35058,3 +35058,61 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 
 
 })(window, window.angular);
+
+var myApp = angular.module('myApp', [
+    'ngRoute',
+    'pageControllers'
+]);
+
+myApp.value('ticket', false);
+
+myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+	$routeProvider.
+        when('home', {
+            templateUrl: 'home.html',
+            controller: 'LoginController'
+        }).
+        when('/studentlist', {
+            resolve: {
+                "check": function ($location) {
+                    if (!ticket) {
+                        $location.path('/home');
+                    }
+                }
+            },
+            templateUrl: './studentlist.html'
+        }).
+        when('/weeklystatus', {
+            resolve: {
+                "check": function ($location) {
+                    if (!ticket) {
+                        $location.path('/home');
+                    }
+                }
+            },
+            templateUrl: './weeklystatus.html'
+        }).
+        otherwise({
+            redirectTo: '/home'
+        });
+    $locationProvider.html5Mode(false);
+}]);
+var pageControllers = angular.module('pageControllers', []);
+
+
+pageControllers.controller('LoginController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+    $scope.errmessage = '';
+    $scope.login = function () {
+        if ($scope.name) {
+            if (($scope.name == 'admin') && ($scope.password == 'admin')) {
+                ticket = true;
+                $location.path('/studentlist');
+            } else {
+                $scope.errmessage = 'Please enter valid credentials of ' + $scope.Role;
+            }
+        } else {
+            $scope.errmessage = 'Please enter valid credentials of '+$scope.Role;
+        }
+    };
+    
+}]);

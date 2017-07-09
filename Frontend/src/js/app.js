@@ -7,8 +7,8 @@ myApp.value('ticket', false);
 
 myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$routeProvider.
-        when('/home', {
-            templateUrl: 'html/home.html',
+        when('home', {
+            templateUrl: 'home.html',
             controller: 'LoginController'
         }).
         when('/studentlist', {
@@ -19,7 +19,7 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
                     }
                 }
             },
-            templateUrl: 'html/studentlist.html'
+            templateUrl: './studentlist.html'
         }).
         when('/weeklystatus', {
             resolve: {
@@ -29,7 +29,7 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
                     }
                 }
             },
-            templateUrl: 'html/weeklystatus.html'
+            templateUrl: './weeklystatus.html'
         }).
         otherwise({
             redirectTo: '/home'
