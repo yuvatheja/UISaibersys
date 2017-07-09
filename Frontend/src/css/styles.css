@@ -1,1 +1,57 @@
-schvgjsc
+body{
+	max-width:1500px;
+	margin: auto;
+	border-style: solid;
+    border-color: #b3b3ff;
+}
+
+#headingname{
+    position : relative;
+    top : 10px;
+    font-size: 30px;
+}
+
+div {
+    padding: 2px;
+    margin: 2px;
+    
+}
+
+#tabs{
+    background:#333;
+	overflow: hidden;
+    list-style: none;
+}
+#tabs li{
+	float:left;
+}
+#tabs li a{
+	display: inline-block;
+	color:#F8F8F8;
+	text-align: center;
+    padding: 10px 10px;
+}
+#tabs li a:hover {
+    background-color: #111;
+}
+#tabs li a:active {
+    background-color: #111;
+}
+
+
+
+p{
+    padding: 2px;
+    margin: 2px;
+    text-align: justify;
+}
+table{
+    border-collapse: collapse;
+    margin: 2px;
+}
+table tr td{
+    border:1px solid black;
+   
+}
+
+

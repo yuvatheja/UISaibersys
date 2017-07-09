@@ -8,28 +8,14 @@ myApp.value('ticket', false);
 myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 	$routeProvider.
         when('home', {
-            templateUrl: 'home.html',
+            templateUrl: 'views/home.html',
             controller: 'LoginController'
         }).
         when('/studentlist', {
-            resolve: {
-                "check": function ($location) {
-                    if (!ticket) {
-                        $location.path('/home');
-                    }
-                }
-            },
-            templateUrl: './studentlist.html'
+            templateUrl: 'views/studentlist.html'
         }).
         when('/weeklystatus', {
-            resolve: {
-                "check": function ($location) {
-                    if (!ticket) {
-                        $location.path('/home');
-                    }
-                }
-            },
-            templateUrl: './weeklystatus.html'
+            templateUrl: 'views/weeklystatus.html'
         }).
         otherwise({
             redirectTo: '/home'
