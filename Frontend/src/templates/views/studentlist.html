@@ -10,22 +10,24 @@
   <form>
       <table border="1">
          <tr>
-             <b>First Name:</b><br> <input type="text" ng-model="firstname"><br>
-        </tr>
-          <tr>
-              <b>Last Name:</b> <br> <input type="text" ng-model="lastname"><br>
+             <td><b>First Name:</b><br> <input type="text" ng-model="firstname"></td>
+              <td><b>Last Name:</b> <br> <input type="text" ng-model="lastname"><br></td>
           </tr>
           <tr>
                <b>Technology:</b><br> <input type="text" ng-model="technology"><br>
           </tr>
           <tr>
-              <b>GuestHouse:</b><br> <input type="text" ng-model="guesthouse"><br>
-        </tr>
+              <b>GuestHouse:</b><br> 
+              <select>
+                  <option value="3211">3211</option>
+                  <option value="17923">17932</option>
+                  <option value="3210">3210</option>
+                  <option value="B101">B101</option>
+                </select>
+        </tr><br>
           <tr>
-               <b>Email:</b><br><input type="email" ng-model="email"><br>
-          </tr>
-          <tr>
-              <b>Phone:</b><br><input type="text" ng-model="firstname"><br>
+               <td><b>Email:</b><br><input type="email" ng-model="email"><br></td>
+               <td><b>Phone:</b><br><input type="text" ng-model="firstname"><br></td>
           </tr>
           <tr>
               <b>University:</b><br><input type="text" ng-model="university"><br>
@@ -37,5 +39,14 @@
       
   </form>
 </div>
+    
+    <div>
+        <h2>Students List</h2>
+        <table>
+            <tr><th>NAME</th><th>GuestHouse</th><th>TECH</th><th>Status</th><th>JOIN DATE</th><th>EMAIL</th><th>PHONE</th><th>UNIVERSITY</th></tr>
+            <tr></tr>
+        </table>
+    
+    </div>
     
 </section>    
