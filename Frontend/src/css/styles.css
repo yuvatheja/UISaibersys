@@ -34,24 +34,8 @@ div {
 #tabs li a:hover {
     background-color: #111;
 }
-#tabs li a:active {
-    background-color: #111;
-}
 
 
 
-p{
-    padding: 2px;
-    margin: 2px;
-    text-align: justify;
-}
-table{
-    border-collapse: collapse;
-    margin: 2px;
-}
-table tr td{
-    border:1px solid black;
-   
-}
 
 
