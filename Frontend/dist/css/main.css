@@ -36,14 +36,20 @@ div {
 }
 
 
-table {
+.Tlist {
     border-collapse: collapse;
 }
 
-table, th, td {
+.Tlist, th, td {
     border: 1px solid black;
-    padding: 2px;
-    margin: 2px;
+    
 }
+
+th, td {
+    width: auto;
+    height: 30px;
+}
+
+tr:hover {background-color: #f5f5f5}
 
 
