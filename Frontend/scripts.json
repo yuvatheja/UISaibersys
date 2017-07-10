@@ -1,6 +1,5 @@
 [
     "./node_modules/angular/angular.js",
-    "./src/js/**/*.js",
-    "./node_modules/angular-route/angular-route.min.js"
+    "./src/js/**/*.js"
     
 ] 

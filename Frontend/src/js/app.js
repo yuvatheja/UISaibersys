@@ -19,5 +19,5 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
         otherwise({
             redirectTo: '/home'
         });
-    
+    $locationProvider.hashPrefix('');
 }]);
