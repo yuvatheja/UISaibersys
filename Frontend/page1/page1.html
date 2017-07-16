@@ -1,0 +1,22 @@
+<h1>Saibesys student List</h1>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Level</th>
+        <th width="200">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="student in data">
+        <td>{{student.name}}</td>
+        <td>{{student.department}}</td>
+        <td>{{student.level}}</td>
+        <td>
+            <a href="" class="btn btn-info">Button</a>
+        </td>
+    </tr>
+
+    </tbody>
+</table>

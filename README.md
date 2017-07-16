@@ -48,3 +48,13 @@ About to write to C:\Users\RevathiSrinivas\Documents\SaibersysUIfolder\package.j
 Is this ok? (yes) Yes
 
 C:\Users\RevathiSrinivas\Documents\SaibersysUIfolder>
+
+How to install bower and run?
+npm install -save http-server
+touch bower.json
+bower install -save bootstrap
+bower install --save angular angular-route
+
+npm install -g http-server 
+
+bower install --save firebase@3.9.0

@@ -1,21 +1,14 @@
 {
-  "name": "uisaibersys",
+  "name": "angularjs-starterpack",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.6.5",
-    "angular-route": "^1.6.5",
-    "bootstrap": "^3.3.7"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.18.12",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1"
+    "http-server": "^0.10.0"
   }
 }
